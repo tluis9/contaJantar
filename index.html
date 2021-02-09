@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <style>
+            body {
+            font-family: Roboto;
+            background: -webkit-linear-gradient(to left, #0f9dc7, #0df1f1);
+            background: linear-gradient(to left, #0f9dc7, #0df1f1);
+            }
+
+              #container {
+                height: auto;
+                width: 360px;
+                margin: 3% auto;
+                padding: 0 0 2% 0;
+                background: #f7f7f7;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+              }
+
+
+              #topo{
+                  background: #1b251e;
+                  margin: 0;
+                  padding:0px;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+              }
+
+                  h1 {
+                  color: white;
+                  text-transform: uppercase;
+                  padding: 10px 25px 0;
+                  font-size: 21px;
+                  font-weight: normal;
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  }
+
+                  img{
+                      height: 15%;
+                      display: block;
+                      margin: 0 auto;
+                  }
+
+
+              p {
+                padding-left: 20px;
+              }
+
+              form input[type="text"] {
+                width:90px;
+              }
+
+              input {
+                padding-left: 20px;
+              }
+
+              #total-conta {
+                font-size: 14px;
+                color: rgb(98, 0, 255);
+                background-color: #f7f7f7;
+                width: 60%;
+                padding: 5px 5px 8px 8px;
+              }
+
+              #total-conta:focus {
+                background: #fff;
+                border: 3px solid #2980b9;
+                outline: none;
+              }
+
+              #taxa-servico {
+                padding: 8px 8px 10px 15px;
+                margin-left: 20px;
+                font-size: 15px;
+              }
+
+              #numero-pessoas {
+                width: 60%;
+                padding: 5px 5px 8px 8px;
+                margin-left: 20px;
+                color: rgb(98, 0, 255);
+                background-color: #f7f7f7;
+                font-size: 14px;
+              }
+
+
+              button {
+                text-transform: uppercase;
+                font-weight: bold;
+                display: block;
+                margin: 30px auto;
+                background: #0ab7e2;
+                border-radius: 5px;
+                width: 200px;
+                height: 50px;
+                font-size: 17px;
+                color: white;
+                cursor: pointer;
+              }
+
+              button:hover {
+                background: #2604a0;
+                border-bottom-color: #111;
+              }
+
+              button:active {
+                position: relative;
+                top: 1px;
+              }
+
+              #valor-calculado {
+                font-size: 30px;
+                margin-top: 5px;
+                text-align: center;
+              }
+
+              #valor-calculado:before {
+                content: "Valor por pessoa:";
+                font-size: 20px;
+                font-weight: bold;
+                display: block;
+                text-transform: uppercase;
+              }
+
+              #valor-calculado sup {
+                font-size: 20px;
+                top: -18px;
+              }
+
+              #valor-calculado small {
+                font-size: 20px;
+                font-weight: bold;
+                display: block;
+              }
+        </style>
+    </head>
+
+
+<div id="container">
+    <div id="topo">
+        <h1>Cálculo do Jantar + Gorjeta</h1>
+        <img src="money.png">
+    </div>
+
+
+    <div id="calculator">  
+      <form>
+        <p>Quanto custou o jantar?
+          <p>
+            R$ <input id="total-conta" type="text" placeholder="Total da conta">
+  
+            <p>Qual a taxa de serviço?
+              <p>
+                <select id="taxa-servico">
+                    <option disabled selected value="0">-- Defina a Taxa --</option>
+                    <option value="0.3">30% - Taxa de serviço ótima + Cover</option>
+                    <option value="0.2">20% - Taxa de serviço + Cover</option>
+                    <option value="0.15">15% - Taxa de serviço excelente</option>
+                    <option value="0.1">10% - Taxa de serviço boa</option>
+                    <option value="0.05">5% - Taxa de serviço ruim</option>
+                </select>
+  
+      </form>
+
+      <p>Quantas pessoas vão dividir a conta?</p>
+      <input id="numero-pessoas" type="text" placeholder="Número de pessoas"> pessoas
+      
+      <button type="button" id="calcular">Calcular!</button>
+  
+    </div>
+    
+    
+    <!--Resultados-->
+    <div id="valor-calculado">
+      <sup>R$</sup><span id="valor-por-cabeca">0.00</span>
+      <small id="each">cada</small>
+    </div>
+    <!--resultados-->
+  
+  </div>
+
+  
+  <script type="text/javascript" src="jantar.js"></script>
+  </html>
