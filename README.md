@@ -21,7 +21,7 @@
  <a href="#visao">Visão geral</a> •
  <a href="#aprender">Como aprender?</a> • 
  <a href="#ajuda">Preciso de Ajuda</a> • 
- <a href="#contato">Contato</a> • 
+ <a href="#contato">Contato</a>  
 </p>
 
 <br>
@@ -31,7 +31,6 @@
 
 <div id="visao">
 <h2>  Visão geral </h2>
-<hr>
 
 Conta do Jantar dos Devs é um app simples criado apenas utilizando HTML, CSS e JS para calcular o valor do jantar e as porcentagens extras (taxa de serviço, cover, gorjetas) por pessoa. O foco principal é treinar nossas habilidades principalmente no JavaScript, e tem caráter educador. 
 </div>
@@ -41,7 +40,6 @@ Conta do Jantar dos Devs é um app simples criado apenas utilizando HTML, CSS e 
 
 <div id="aprender">
 <h2> Como posso aprender </h2>
-<hr>
 
 Você pode ter acesso ao tutorial completo desse app acessando o vídeo abaixo, junto com várias explicações técnicas das linhas de código que utilizamos e o motivo de as termos escolhido. 
 
@@ -53,7 +51,6 @@ Você pode ter acesso ao tutorial completo desse app acessando o vídeo abaixo, 
 
 <div id="ajuda">
 <h2>  Precisa de ajuda?  </h2>
-<hr>
 
 Caso precise de ajuda para acessar os arquivos, ou não esteja entendendo alguma linha de comando utilizada, recomendamos que utilize o espaço disponível para comentários no vídeo explicativo do app que deixei o link acima. 
 </div>
@@ -63,7 +60,6 @@ Caso precise de ajuda para acessar os arquivos, ou não esteja entendendo alguma
 
 <div id="contato">
 <h2> Como entro em contato? </h2>
-<hr>
 
 Será um prazer entrar em contato com você! Pode escolher qualquer uma das formas abaixo, que entraremos em contato o mais breve possível!
 
